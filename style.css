@@ -19,7 +19,7 @@ body{
 nav{
     width:90%;
     margin:auto;
-    padding:35px 0;
+    padding:40px 0;
 
     display:flex;
     justify-content:space-between;
@@ -29,13 +29,13 @@ nav{
 .logo{
     font-size:28px;
     font-weight:700;
-    color:#1E1E1C;
     letter-spacing:2px;
+    color:#1E1E1C;
 }
 
 nav ul{
     display:flex;
-    gap:35px;
+    gap:40px;
     list-style:none;
 }
 
@@ -43,7 +43,6 @@ nav a{
     text-decoration:none;
     color:#1E1E1C;
     font-weight:500;
-    transition:0.3s;
 }
 
 nav a:hover{
@@ -53,7 +52,7 @@ nav a:hover{
 /* HERO */
 
 .hero{
-    min-height:85vh;
+    min-height:90vh;
 
     display:flex;
     flex-direction:column;
@@ -67,108 +66,89 @@ nav a:hover{
 }
 
 .profile-pic{
-
     width:240px;
     height:300px;
 
     object-fit:cover;
 
-    border-radius:20px;
+    border-radius:18px;
 
-    margin-bottom:40px;
+    margin-bottom:45px;
 
-    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
 
 .hero h1{
-
-    font-size:80px;
-
+    font-size:92px;
     font-weight:700;
-
     color:#1E1E1C;
-
     letter-spacing:2px;
 
     margin-bottom:20px;
 }
 
 .hero h3{
-
     font-size:24px;
-
     font-weight:500;
 
     line-height:1.8;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
-
     font-size:18px;
-
     line-height:2;
 
-    margin-bottom:35px;
+    color:#444;
 
-    color:#3A3A38;
+    margin-bottom:35px;
 }
 
-/* BUTTON */
-
 .btn{
-
     background:#2F6BFF;
-
     color:white;
 
     text-decoration:none;
 
-    padding:15px 32px;
+    padding:15px 35px;
 
     border-radius:50px;
 
     font-weight:600;
-
-    transition:0.3s;
 }
 
 .btn:hover{
-
-    transform:translateY(-2px);
-
-    background:#2557d6;
+    background:#2457dd;
 }
 
 /* CARDS */
 
 .card{
 
-    width:75%;
+    width:80%;
 
-    margin:120px auto;
+    margin:140px auto;
 
-    background:#F4EEE3;
+    background:#1E1E1C;
+
+    color:#D8CBB3;
 
     padding:55px;
 
-    border-radius:30px;
-
-    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+    border-radius:25px;
 }
 
 .card h2{
-
-    color:#1E1E1C;
-
-    font-size:36px;
-
+    color:white;
     margin-bottom:25px;
 }
 
-.card p{
+.card h3{
+    color:white;
+}
 
+.card p{
     line-height:2;
 }
 
@@ -178,92 +158,77 @@ nav a:hover{
     margin-bottom:35px;
 }
 
-.entry h3{
-    margin-bottom:8px;
-}
-
 /* ACHIEVEMENTS */
 
 #achievements{
     width:85%;
-    margin:150px auto;
+    margin:180px auto;
 }
 
 #achievements h2{
     text-align:center;
-    margin-bottom:60px;
-    color:#1E1E1C;
     font-size:42px;
+
+    color:#1E1E1C;
+
+    margin-bottom:60px;
 }
 
 .grid{
-
     display:grid;
 
     grid-template-columns:
     repeat(auto-fit,minmax(280px,1fr));
 
-    gap:30px;
+    gap:25px;
 }
 
 .small{
     margin:0;
-    padding:35px;
+    background:#1E1E1C;
+    color:#D8CBB3;
 }
 
 .small h3{
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 /* SKILLS */
 
 .skills{
-
     display:flex;
-
     flex-wrap:wrap;
-
     gap:15px;
 }
 
 .skills span{
-
     background:#2F6BFF;
-
     color:white;
 
     padding:12px 22px;
 
-    border-radius:40px;
-
-    font-weight:500;
+    border-radius:50px;
 }
 
 /* CONTACT */
 
 #contact a{
-
+    color:#D8CBB3;
     text-decoration:none;
-
-    color:#1E1E1C;
-
-    font-weight:500;
 }
 
 #contact a:hover{
-
     color:#2F6BFF;
 }
 
 /* FOOTER */
 
 footer{
-
     text-align:center;
 
-    padding:80px 0 40px;
+    padding:80px 0;
 
-    color:#555;
+    color:#1E1E1C;
 }
 
 /* MOBILE */
@@ -281,21 +246,19 @@ footer{
     }
 
     .hero h1{
-        font-size:52px;
+        font-size:55px;
     }
 
     .hero h3{
-        font-size:20px;
+        font-size:19px;
     }
 
     .profile-pic{
-
         width:180px;
-        height:220px;
+        height:230px;
     }
 
     .card{
-
         width:90%;
         padding:35px;
     }
