@@ -10,11 +10,11 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#FFFEC1;
-    color:#2D3748;
+    background:#D8CBB3;
+    color:#1E1E1C;
 }
 
-/* Navbar */
+/* NAVBAR */
 
 nav{
     width:90%;
@@ -29,7 +29,7 @@ nav{
 .logo{
     font-size:28px;
     font-weight:700;
-    color:#ff8f66;
+    color:#1E1E1C;
     letter-spacing:2px;
 }
 
@@ -41,19 +41,19 @@ nav ul{
 
 nav a{
     text-decoration:none;
-    color:#2D3748;
+    color:#1E1E1C;
     font-weight:500;
+    transition:0.3s;
 }
 
 nav a:hover{
-    color:#ff8f66;
+    color:#2F6BFF;
 }
 
-/* Hero */
+/* HERO */
 
 .hero{
-
-    min-height:100vh;
+    min-height:85vh;
 
     display:flex;
     flex-direction:column;
@@ -68,30 +68,29 @@ nav a:hover{
 
 .profile-pic{
 
-    width:260px;
-    height:320px;
+    width:240px;
+    height:300px;
 
     object-fit:cover;
 
-    border-radius:25px;
+    border-radius:20px;
 
     margin-bottom:40px;
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,0.12);
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
 }
 
 .hero h1{
 
-    font-size:95px;
+    font-size:80px;
 
     font-weight:700;
 
-    color:#ff8f66;
+    color:#1E1E1C;
 
     letter-spacing:2px;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .hero h3{
@@ -102,7 +101,7 @@ nav a:hover{
 
     line-height:1.8;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .hero p{
@@ -111,18 +110,22 @@ nav a:hover{
 
     line-height:2;
 
-    margin-bottom:40px;
+    margin-bottom:35px;
+
+    color:#3A3A38;
 }
+
+/* BUTTON */
 
 .btn{
 
-    background:#FFBE91;
+    background:#2F6BFF;
 
-    color:#2D3748;
+    color:white;
 
     text-decoration:none;
 
-    padding:16px 32px;
+    padding:15px 32px;
 
     border-radius:50px;
 
@@ -133,35 +136,35 @@ nav a:hover{
 
 .btn:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 
-    background:#FFDDB0;
+    background:#2557d6;
 }
 
-/* Cards */
+/* CARDS */
 
 .card{
 
     width:75%;
 
-    margin:140px auto;
+    margin:120px auto;
 
-    background:rgba(255,255,255,0.55);
+    background:#F4EEE3;
 
-    backdrop-filter:blur(12px);
+    padding:55px;
 
     border-radius:30px;
 
-    padding:55px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
 }
 
 .card h2{
 
-    font-size:35px;
+    color:#1E1E1C;
 
-    margin-bottom:30px;
+    font-size:36px;
 
-    color:#ff8f66;
+    margin-bottom:25px;
 }
 
 .card p{
@@ -169,36 +172,28 @@ nav a:hover{
     line-height:2;
 }
 
-/* Education */
+/* EDUCATION */
 
 .entry{
-
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
 .entry h3{
-
     margin-bottom:8px;
 }
 
-/* Achievement Grid */
+/* ACHIEVEMENTS */
 
 #achievements{
-
     width:85%;
-
-    margin:180px auto;
+    margin:150px auto;
 }
 
 #achievements h2{
-
     text-align:center;
-
     margin-bottom:60px;
-
-    color:#ff8f66;
-
-    font-size:45px;
+    color:#1E1E1C;
+    font-size:42px;
 }
 
 .grid{
@@ -208,22 +203,19 @@ nav a:hover{
     grid-template-columns:
     repeat(auto-fit,minmax(280px,1fr));
 
-    gap:35px;
+    gap:30px;
 }
 
 .small{
-
     margin:0;
-
-    padding:40px;
+    padding:35px;
 }
 
 .small h3{
-
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
-/* Skills */
+/* SKILLS */
 
 .skills{
 
@@ -236,32 +228,34 @@ nav a:hover{
 
 .skills span{
 
-    background:#C1ECFF;
+    background:#2F6BFF;
 
-    padding:12px 24px;
+    color:white;
+
+    padding:12px 22px;
 
     border-radius:40px;
 
     font-weight:500;
 }
 
-/* Contact */
+/* CONTACT */
 
 #contact a{
 
     text-decoration:none;
 
-    color:#2D3748;
+    color:#1E1E1C;
 
     font-weight:500;
 }
 
 #contact a:hover{
 
-    color:#ff8f66;
+    color:#2F6BFF;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
 
@@ -269,48 +263,40 @@ footer{
 
     padding:80px 0 40px;
 
-    font-weight:500;
-
     color:#555;
 }
 
-/* Mobile */
+/* MOBILE */
 
 @media(max-width:768px){
 
     nav{
-
         flex-direction:column;
-
         gap:20px;
     }
 
     nav ul{
-
         flex-wrap:wrap;
         justify-content:center;
     }
 
     .hero h1{
-
-        font-size:60px;
+        font-size:52px;
     }
 
     .hero h3{
-
         font-size:20px;
     }
 
     .profile-pic{
 
-        width:200px;
-        height:250px;
+        width:180px;
+        height:220px;
     }
 
     .card{
 
         width:90%;
-
         padding:35px;
     }
 }
