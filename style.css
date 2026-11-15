@@ -9,46 +9,44 @@ html{
 }
 
 body{
-    background:#F4EFE7;
-    color:#30475E;
+    background:#EFE7DA;
+    color:#21352B;
     font-family:'Inter',sans-serif;
+    line-height:1.8;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
     width:85%;
     margin:auto;
-
     padding:35px 0;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    border-bottom:1px solid #E4DDD2;
 }
 
 .logo{
     font-size:32px;
     font-weight:700;
-    color:#30475E;
+    color:#21352B;
 }
 
 nav ul{
     list-style:none;
     display:flex;
-    gap:40px;
+    gap:35px;
 }
 
 nav a{
     text-decoration:none;
-    color:#5D6D7E;
+    color:#21352B;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#C86B3C;
+    color:#C76B3A;
 }
 
 /* HERO */
@@ -70,50 +68,43 @@ nav a:hover{
 .hero h1{
     font-family:'Cormorant Garamond',serif;
 
-    font-size:110px;
+    font-size:150px;
 
-    line-height:.9;
+    line-height:.85;
 
-    color:#30475E;
+    color:#21352B;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .hero h3{
-    color:#5D6D7E;
+    font-size:22px;
+    font-weight:400;
 
-    line-height:1.8;
+    color:#4A5C53;
 
     margin-bottom:20px;
-
-    font-weight:400;
 }
 
 .hero p{
-    color:#5D6D7E;
-
-    line-height:2;
-
+    color:#4A5C53;
     margin-bottom:30px;
 }
 
 .profile-pic{
-
     width:100%;
-    max-width:380px;
+    max-width:450px;
 
-    border-radius:180px 180px 20px 20px;
+    border-radius:220px 220px 25px 25px;
 
-    border:3px solid #DDD4C7;
+    border:3px solid #D8CCBC;
 }
 
 .btn{
-
-    background:#C86B3C;
-
+    background:#C76B3A;
     color:white;
 
-    padding:15px 30px;
+    padding:15px 32px;
 
     border-radius:40px;
 
@@ -123,81 +114,71 @@ nav a:hover{
 }
 
 .btn:hover{
-    background:#A9562C;
+    background:#A5552B;
 }
 
-/* ALL CARDS */
+/* SECTIONS */
 
 .card{
-
     width:85%;
-
     margin:120px auto;
 
-    background:#FFFDFC;
+    background:#F9F5EE;
 
     padding:70px;
 
     border-radius:25px;
 
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.04);
+    border:1px solid #DDD1C2;
 }
 
 .card h2{
-
     font-family:'Cormorant Garamond',serif;
 
-    font-size:58px;
+    font-size:60px;
 
-    color:#30475E;
+    color:#21352B;
 
     margin-bottom:25px;
 }
 
 .card p{
-    color:#5D6D7E;
-
-    line-height:2;
+    color:#4A5C53;
 }
 
-/* EDUCATION */
+/* Education */
 
 .entry{
-
     padding:25px 0;
 
-    border-bottom:1px solid #ECE5DB;
+    border-bottom:1px solid #DDD1C2;
 }
 
 .entry h3{
-    color:#30475E;
+    color:#21352B;
+    margin-bottom:5px;
 }
 
 /* ACHIEVEMENTS */
 
 #achievements{
-
     width:85%;
-
     margin:140px auto;
 }
 
 #achievements h2{
-
     text-align:center;
 
     font-size:70px;
 
-    font-family:'Cormorant Garamond',serif;
-
-    color:#30475E;
+    color:#21352B;
 
     margin-bottom:60px;
+
+    font-family:'Cormorant Garamond',serif;
 }
 
 .grid{
-
     display:grid;
 
     grid-template-columns:
@@ -207,74 +188,78 @@ nav a:hover{
 }
 
 .small{
+    background:#F9F5EE;
 
-    background:white;
-
-    border:1px solid #ECE5DB;
+    padding:35px;
 
     border-radius:20px;
 
-    padding:35px;
+    border:1px solid #DDD1C2;
 }
 
 .small h3{
-    color:#30475E;
-    margin-bottom:10px;
-}
-
-.small p{
-    color:#5D6D7E;
+    color:#21352B;
 }
 
 /* SKILLS */
 
 .skills{
-
     display:flex;
     flex-wrap:wrap;
     gap:15px;
 }
 
 .skills span{
+    background:#F2E3D6;
 
-    background:#FAE8DF;
+    color:#C76B3A;
 
-    color:#C86B3C;
+    border:1px solid #DAB59D;
 
-    padding:12px 24px;
+    padding:12px 20px;
 
-    border-radius:40px;
-
-    border:1px solid #E9C8B7;
+    border-radius:30px;
 }
 
 /* CONTACT */
 
 #contact a{
-
-    color:#C86B3C;
-
+    color:#C76B3A;
     text-decoration:none;
 }
 
 #contact a:hover{
-    color:#A9562C;
+    color:#A5552B;
 }
 
 /* FOOTER */
 
 footer{
-
     text-align:center;
 
-    padding:80px 0;
+    padding:70px 0;
 
-    color:#5D6D7E;
+    color:#4A5C53;
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
+
+    .hero{
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:80px;
+    }
+
+    .profile-pic{
+        max-width:280px;
+        margin:auto;
+    }
 
     nav{
         flex-direction:column;
@@ -284,21 +269,6 @@ footer{
     nav ul{
         flex-wrap:wrap;
         justify-content:center;
-    }
-
-    .hero{
-        grid-template-columns:1fr;
-        text-align:center;
-        gap:40px;
-    }
-
-    .hero h1{
-        font-size:72px;
-    }
-
-    .profile-pic{
-        max-width:280px;
-        margin:auto;
     }
 
     .card{
