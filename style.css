@@ -43,10 +43,7 @@ nav a{
     text-decoration:none;
     color:#21352B;
     font-weight:500;
-    transition:.3s;
-    nav a:hover{
-    color:#C76B3A;
-}
+    transition:0.25s ease;
 }
 
 nav a:hover{
@@ -74,7 +71,7 @@ nav a:hover{
 
     font-size:170px;
 
-    line-height:.82;
+    line-height:0.82;
 
     color:#21352B;
 
@@ -108,6 +105,8 @@ nav a:hover{
     border:4px solid #D9CCBB;
 }
 
+/* BUTTON */
+
 .btn{
     background:#C76B3A;
     color:white;
@@ -124,13 +123,9 @@ nav a:hover{
 }
 
 .btn:hover{
-
     background:#A75830;
 
     transform:translateY(-2px);
-}
-.btn:hover{
-    background:#A75830;
 }
 
 /* SECTIONS */
@@ -154,12 +149,12 @@ nav a:hover{
 }
 
 .card:hover{
-
     transform:translateY(-4px);
 
     box-shadow:
     0 8px 25px rgba(0,0,0,0.05);
 }
+
 .card h3{
     font-family:'Cormorant Garamond',serif;
 
@@ -172,19 +167,39 @@ nav a:hover{
 
 .card p{
     color:#4A5C53;
+
     line-height:2;
 }
 
 /* EDUCATION */
 
-.entry{
+.edu-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
     padding:25px 0;
 
     border-bottom:1px solid #DDD0C0;
 }
 
-.entry:last-child{
+.edu-item:last-child{
     border-bottom:none;
+}
+
+.edu-logo{
+    width:75px;
+    height:75px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:6px;
+
+    border-radius:12px;
+
+    flex-shrink:0;
 }
 
 .entry h4{
@@ -195,6 +210,10 @@ nav a:hover{
     margin-bottom:8px;
 }
 
+.entry p{
+    margin-bottom:4px;
+}
+
 /* ACHIEVEMENTS */
 
 .achievement-list{
@@ -203,22 +222,23 @@ nav a:hover{
 }
 
 .achievement-list p{
+    padding:14px 0;
 
-    margin-bottom:18px;
+    border-bottom:1px solid #DDD0C0;
 
     font-size:18px;
 
     transition:all 0.25s ease;
 }
 
-.achievement-list p:hover{
+.achievement-list p:last-child{
+    border-bottom:none;
+}
 
+.achievement-list p:hover{
     color:#C76B3A;
 
     padding-left:8px;
-}
-.achievement-list p:last-child{
-    border-bottom:none;
 }
 
 /* SKILLS */
@@ -230,7 +250,6 @@ nav a:hover{
 }
 
 .skills span{
-
     background:#F7E3D7;
 
     color:#C76B3A;
@@ -245,7 +264,6 @@ nav a:hover{
 }
 
 .skills span:hover{
-
     background:#C76B3A;
 
     color:white;
@@ -296,25 +314,34 @@ footer{
 
     .profile-pic{
         max-width:280px;
+
         margin:auto;
     }
 
     nav{
         flex-direction:column;
+
         gap:20px;
     }
 
     nav ul{
         justify-content:center;
+
         flex-wrap:wrap;
     }
 
     .card{
         width:92%;
+
         padding:35px;
     }
 
     .card h3{
         font-size:40px;
+    }
+
+    .edu-item{
+        flex-direction:column;
+        text-align:center;
     }
 }
