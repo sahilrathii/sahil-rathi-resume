@@ -44,6 +44,9 @@ nav a{
     color:#21352B;
     font-weight:500;
     transition:.3s;
+    nav a:hover{
+    color:#C76B3A;
+}
 }
 
 nav a:hover{
@@ -114,11 +117,18 @@ nav a:hover{
     border-radius:40px;
 
     text-decoration:none;
+
     display:inline-block;
 
-    transition:.3s;
+    transition:all 0.25s ease;
 }
 
+.btn:hover{
+
+    background:#A75830;
+
+    transform:translateY(-2px);
+}
 .btn:hover{
     background:#A75830;
 }
@@ -137,8 +147,19 @@ nav a:hover{
     border-radius:25px;
 
     border:1px solid #DDD0C0;
+
+    transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.05);
+}
 .card h3{
     font-family:'Cormorant Garamond',serif;
 
@@ -182,13 +203,20 @@ nav a:hover{
 }
 
 .achievement-list p{
-    padding:14px 0;
 
-    border-bottom:1px solid #DDD0C0;
+    margin-bottom:18px;
 
     font-size:18px;
+
+    transition:all 0.25s ease;
 }
 
+.achievement-list p:hover{
+
+    color:#C76B3A;
+
+    padding-left:8px;
+}
 .achievement-list p:last-child{
     border-bottom:none;
 }
@@ -202,6 +230,7 @@ nav a:hover{
 }
 
 .skills span{
+
     background:#F7E3D7;
 
     color:#C76B3A;
@@ -211,6 +240,15 @@ nav a:hover{
     border-radius:30px;
 
     font-weight:500;
+
+    transition:all 0.25s ease;
+}
+
+.skills span:hover{
+
+    background:#C76B3A;
+
+    color:white;
 }
 
 /* CONTACT */
